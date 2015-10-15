@@ -10,11 +10,9 @@
 
 <template name="hello">
 <form class='hello'>
-    <label for="hello">Command:</label><input name="hello" id="hello" type="text" placeholder="order" />
-    <button type="submit" id="submit">go</button>
-</form>
-<ul><p>
-{{#each console}}
-{{data}}{{/each}}
-</p></ul>
+    <label for="hello">Your App name:</label><input name="hello" id="hello" type="text" placeholder="the name you want" />
+    <button type="submit" id="submit">Create</button>
+    </form>
+<input type="button" class="go" value="Go to your app!">
+<p>{{#each console}} {{data}} {{/each}}</p>
 </template>
