@@ -1,0 +1,20 @@
+<head>
+  <title>test2</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+<form class='hello'>
+    <label for="hello">Command:</label><input name="hello" id="hello" type="text" placeholder="order" />
+    <button type="submit" id="submit">go</button>
+</form>
+<ul><p>
+{{#each console}}
+{{data}}{{/each}}
+</p></ul>
+</template>
